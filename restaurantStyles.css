@@ -1,0 +1,59 @@
+#navigation{}
+#title{
+	font-family: "Times New Roman", Times, serif;
+}
+#footer{
+
+}
+#allTables{
+	 width:100%;
+	 border-collapse:collapse;}
+.info{
+
+}
+
+.inquiry{
+
+}
+
+.addInfo{
+
+}
+
+.choice{
+
+}
+
+.days{
+
+}
+
+.submit{
+
+}
+
+#content{
+	background-color:#ba721b;
+}
+
+#name, #email, #phone, .inquiry{
+	font-weight:bold;
+}
+
+a:hover{
+	font-weight:bold;
+}
+
+.table3{
+	border: 1px solid;
+	text-align:left;
+	padding: 8px;
+}
+
+.bev{
+	text-decoration:underline;
+}
+
+html{
+	background-image:url("italy.jpg")
+}
