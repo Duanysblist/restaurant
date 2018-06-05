@@ -5,10 +5,20 @@
 <head>
 
 	<title>Ai Giovanni's Menu</title>
+	
 	<link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
 	<style>
 
-	body{background-color:#42f4b9;}
+	body{background-color:#42f4b9;
+		opacity:1;
+	}
+
+	h2, td{font-family: 'Playfair Display', serif;
+
+	}
 
 	</style>
 
@@ -23,14 +33,14 @@
 	<div id="navigation">
 	<hr/>
 
-		<p>
-			<a href="home.html" target="_blank">Home</a>
+		<ul>
+			<li><a href="home.html" target="_blank">Home</a></li>
 
-			<a href="menu.html" target="_blank">Menu</a>
+			<li><a href="menu.html" target="_blank">Menu</a></li>
 
-			<a href="contact.html" target="_blank">Contact</a>
+			<li><a href="contact.html" target="_blank">Contact</a></li>
 
-		</p>
+		</ul>
 
 	<hr/>
 	</div>
@@ -38,12 +48,12 @@
 	<h2><center>Our Menu</center></h2>
 
 	<div id="allTables">
-	<table>
+	<table class="center">
 		<div class="table1">
 		<tr>
-			<th>Spaghetti and Meatballs</th>
-			<th>Eggplant Parm</th>
-			<th>Crudo</th>
+			<th><button class="spag">Spaghetti and Meatballs</button></th>
+			<th><button class="egg">Eggplant Parm</button></th>
+			<th><button class="crudo">Crudo</button></th>
 		</tr>
 
 		<tr>
@@ -57,9 +67,9 @@
 
 		<div class="table2">
 		<tr>
-			<th>Pasta Primavera</th>
-			<th>Lasagna</th>
-			<th>Chicken Parm</th>
+			<th><button class="prima">Pasta Primavera</button></th>
+			<th><button class="lasag">Lasagna</button></th>
+			<th><button class="cparm">Chicken Parm</button></th>
 		</tr>
 
 		<tr>
@@ -73,9 +83,9 @@
 
 		<div class="table3">
 		<tr>
-			<div class="bev">
-			<td colspan="2">Beverages</td>
-			</div>
+			
+			<td class="bev" colspan="2">Beverages</td>
+			
 		</tr>
 		<tr>
 			<td>Root Beer</td>
@@ -100,11 +110,13 @@
 	</table>
 	</div>
 
+<div id="footer">
 <hr/>
 		<footer>
 			<p><center><strong>1600 Pennsylvania Avenue NW, Washington, DC 20500</strong></center></p><br/>
 			<p><center><strong>(866) 930-6480</strong></center></p>
 		</footer>
+</div>
 
 </body>
 
