@@ -44,7 +44,7 @@
 	font-family: Century Gothic, sans-serif;
 }
 
-#infoCarousel{
+#myCarousel{
 	color:#a9f28a;
 	font-size: 20px;
 	font-family: Century Gothic, sans-serif;
@@ -135,4 +135,19 @@ li a:hover{
 
 .titles{
 	font-weight: bold;
+}
+
+.item, .item_active{
+	text-align:center;
+}
+
+.carousel{
+	width:100%;
+	height:300px;
+}
+
+.item img{
+	object-fit:cover;
+	height:300px !important;
+	width:100%;
 }
