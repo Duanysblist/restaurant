@@ -1,4 +1,5 @@
-#navigation{}
+#navigation{background-color: #f3f3f3;
+			opacity:0.6;		}
 #title{
 	font-family: Bookman Old Style
 }
@@ -43,6 +44,13 @@
 	font-family: Century Gothic, sans-serif;
 }
 
+#infoCarousel{
+	color:#a9f28a;
+	font-size: 20px;
+	font-family: Century Gothic, sans-serif;
+	background-color:#996133;
+}
+
 #name, #email, #phone, .inquiry, .addInfo, legend{
 	font-weight:bold;
 	color:yellow;
@@ -52,24 +60,27 @@ a:hover{
 	font-weight:bold;
 }
 
-.table3{
+/*.table3{
 	border: 1px solid;
 	text-align:left;
-	padding: 8px;
+	padding: 8px;*/
 }
 
 .bev{
 	text-decoration:underline;
 }
 
-html{
+head, body{
 	background-image:url("italy.jpg");
 	background-size:cover;
 }
 
-table.center{
-	margin-left:auto;
-	margin-right:auto;
+.col-sm-4, .col-sm-6, .col-sm-12{
+	text-align: center;
+}
+
+.jumbotron{
+	text-align: center;
 }
 
 input[type=text], select, textarea{
@@ -83,7 +94,7 @@ input[type=text], select, textarea{
 	resize: vertical;
 }
 
-.spag, .egg, .crudo, .prima, .lasag, .cparm{
+/*.spag, .egg, .crudo, .prima, .lasag, .cparm{
 	background-color:#a01c04;
 	border: none;
 	color: white;
@@ -94,9 +105,9 @@ input[type=text], select, textarea{
 	font-size: 16px;
 	margin: 4px 2px;
 	border-radius: 8px;
-}
+}*/
 
-ul{
+/*ul{
 	list-style-type: none;
 	margin:0;
 	padding:0;
@@ -116,8 +127,12 @@ li a{
 	text-align:center;
 	padding: 14px 16px;
 	text-decoration:none;
-}
+}*/
 
 li a:hover{
 	background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);;
+}
+
+.titles{
+	font-weight: bold;
 }

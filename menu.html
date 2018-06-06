@@ -5,6 +5,8 @@
 <head>
 
 	<title>Ai Giovanni's Menu</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="restaurantStyles.css">
 	
@@ -16,15 +18,19 @@
 		opacity:1;
 	}
 
-	h2, td{font-family: 'Playfair Display', serif;
+	h2, #allTables{font-family: 'Playfair Display', serif;
 
 	}
 
-	tr:nth-child(even){
+	.row:nth-child(even){
 		background-color:#f2f2f2;
 	}
 
-	th, td{
+	.row:nth-child(odd){
+		background-color:#42f4b9
+	}
+
+	.row{
 		padding:15px;
 	}
 
@@ -45,12 +51,15 @@
 	<div id="navigation">
 	<hr/>
 
-		<ul>
-			<li><a href="home.html" target="_blank">Home</a></li>
+		<ul class="nav nav-tabs">
 
-			<li><a href="menu.html" target="_blank">Menu</a></li>
+			<li class="active">
 
-			<li><a href="contact.html" target="_blank">Contact</a></li>
+			<li><a href="home.html" target="_blank"><span class="glyphicon glyphicon-home"></span></a></li>
+
+			<li><a href="menu.html" target="_blank"><span class="glyphicon glyphicon-list-alt"></a></li>
+
+			<li><a href="contact.html" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a></li>
 
 		</ul>
 
@@ -62,65 +71,83 @@
 	<div id="allTables">
 	<table class="center">
 		<div class="table1">
-		<tr>
-			<th><button class="spag">Spaghetti and Meatballs</button></th>
-			<th><button class="egg">Eggplant Parm</button></th>
-			<th><button class="crudo">Crudo</button></th>
-		</tr>
+			<div class="titles">
+			<div class="row">
+				<div class="col-sm-4">Spaghetti and Meatballs</div>
+				<div class="col-sm-4">Eggplant Parm</div>
+				<div class="col-sm-4">Crudo</div>
+			</div>
+			</div>
 
-		<tr>
-			<td><em><center>Served with your choice of<br/>Turkey or Beef Meatballs<br/>Bread and Caesar Salad<br/><strong>$10.95</strong></center></em></td>
+			<div class="row">
+				<div class="col-sm-4">Served with your choice of<br/>Turkey or Beef Meatballs<br/>Bread and Caesar Salad<br/><strong>$10.95</strong></div>
 			
-			<td><em><center>Served with your choice of<br/>Pasta e Fagioli Soup or Bruschetta<br/> and a glass of Pinot Grigio<br/><strong>$15.95</strong></center></em></td>
 
-			<td><em><center>Served with a shallot mignonette<br/> and ponzu sauce atop a bed of arugula<br/> and toasted baguette<br/><strong>$12.95</strong></center></em></td>
-		</tr>
+			
+				<div class="col-sm-4">Served with your choice of<br/>Pasta e Fagioli Soup or Bruschetta<br/> and a glass of Pinot Grigio<br/><strong>$15.95</strong></div>
+			
+
+			
+				<div class="col-sm-4">Served with a shallot mignonette<br/> and ponzu sauce atop a bed of arugula<br/> and toasted baguette<br/><strong>$12.95</strong></div>
+			</div>
 		</div>
 
 		<div class="table2">
-		<tr>
-			<th><button class="prima">Pasta Primavera</button></th>
-			<th><button class="lasag">Lasagna</button></th>
-			<th><button class="cparm">Chicken Parm</button></th>
-		</tr>
 
-		<tr>
-			<td><em><center>Served with your choice of<br/>Insalata Melona or Pomodoro Caprese<br/>and italian bread<br/><strong>$11.95</strong></center></em></td>
+			<div class="titles">
+			<div class="row">
+				<div class="col-sm-4">Pasta Primavera</div>
+				<div class="col-sm-4">Lasagna</div>
+				<div class="col-sm-4">Chicken Parm</div>
+			</div>
+			</div>
 
-			<td><em><center>Served with Mozzarella Fonduta<br/>and foccacia bread<br/><strong>$16.95</strong></center></em></td>
+			<div class="row">
+				<div class="col-sm-4">Served with your choice of<br/>Insalata Melona or Pomodoro Caprese<br/>and italian bread<br/><strong>$11.95</strong></div>
 
-			<td><em><center>Served with your choice of pasta:<br/>spaghettini, linguine, papardelle, or penne<br/>and italian bread<br/><strong>$13.95</strong></center></em></td>
-		</tr>
+				<div class="col-sm-4">Served with Mozzarella Fonduta<br/>and foccacia bread<br/><strong>$16.95</strong></div>
+
+				<div class="col-sm-4">Served with your choice of pasta:<br/>spaghettini, linguine, papardelle, or penne<br/>and italian bread<br/><strong>$13.95</strong></div>
+			</div>
+
+			</div>
+		
 
 
-		<div class="table3">
-		<tr>
+	<div class="table3">
+		
+		<div class="titles">
+		<div class="row">
 			
-			<td class="bev" colspan="2">Beverages</td>
-			
-		</tr>
-		<tr>
-			<td>Root Beer</td>
-			<td>$3.00</td>
-		</tr>
-		<tr>
-			<td>Bottled Water</td>
-			<td>$1.25</td>
-		</tr>
-		<tr>
-			<td>Lemonade</td>
-			<td>$1.00</td>
-		</tr>
-		<tr>
-			<td>Iced Tea</td>
-			<td>$1.25</td>
-		</tr>
+			<div class="col-sm-12">Beverages</div>
+		
+		</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-6">Root Beer</div>
+			<div class="col-sm-6">$3.00</div>
 		</div>
 
+		<div class="row">
+			<div class="col-sm-6">Bottled Water</div>
+			<div class="col-sm-6">$1.25</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-6">Lemonade</div>
+			<div class="col-sm-6">$1.00</div>
 		</div>
 
-	</table>
+		<div class="row">
+			<div class="col-sm-6">Iced Tea</div>
+			<div class="col-sm-6">$1.25</div>
+		</div>
+
 	</div>
+
+		</div>
+
 
 <div id="footer">
 <hr/>
