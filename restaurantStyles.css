@@ -1,11 +1,14 @@
 #navigation{background-color: #f3f3f3;
 			opacity:0.6;		}
 #title{
-	font-family: Bookman Old Style
+	font-family: Trattatello, fantasy;
+	font-size: 60px;	
 }
 #footer{
 	font-family: Brush Script MT, Brush Script Std, cursive;
 	font-size:20px;
+	color:#FFF8C6;
+
 }
 #allTables{
 	 width:100%;
@@ -51,7 +54,7 @@
 	background-color:#996133;
 }
 
-#name, #email, #phone, .inquiry, .addInfo, legend{
+#name, #email, #phone, .reason, .addInfo, legend{
 	font-weight:bold;
 	color:yellow;
 }
@@ -150,4 +153,12 @@ li a:hover{
 	object-fit:cover;
 	height:300px !important;
 	width:100%;
+}
+
+.jumbotron{
+	background-image:url("warning.jpg");
+}
+
+legend{
+	text-align:center;
 }

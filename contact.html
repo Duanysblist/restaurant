@@ -15,9 +15,13 @@
 
 	<link rel="stylesheet" type="text/css" href="restaurantStyles.css">
 
+	<style>
 
+	#footer{
+		background-image:url("footer-background.png");
+	}
 
-	
+	</style>
 
 </head>
 
@@ -61,9 +65,10 @@
 		</div>
 
 		<div class="inquiry">
-
+		<div class="reason">
 		<label for="reason">Reason for Inquiry:</label>
-		<select id="reason" name="reason">
+		</div>
+		<select id="Reason" name="reason">
 			<option value="default" selected>Catering</option>
 			<option value="privateParty">Private Party</option>
 			<option value="feedback">Feedback</option>
@@ -75,9 +80,11 @@
 		<div class="addInfo">
 
 		<label for="info" id="addInfo">Additional Information</label>
+		</div>
+
 		<textarea rows="4" cols="50" id="info"></textarea><br/>
 
-		</div>
+		
 
 		<div class="choice">
 
@@ -129,12 +136,22 @@
 	</center></form>
 
 		<div id="footer">
-		<hr/>
-		<footer>
-			<p><center><strong>1600 Pennsylvania Avenue NW, Washington, DC 20500</strong></center></p><br/>
-			<p><center><strong>(866) 930-6480</strong></center></p>
-		</footer>
-		</div>
+	<hr/>
+		
+
+			<div class="row">
+			<div class="col-sm-12">1600 Pennsylvania Avenue NW, Washington, DC 20500</div>
+			</div>
+
+			<br/>
+
+			<div class="row">
+			<div class="col-sm-12">(866) 930-6480</div>
+			</div>
+
+		
+
+	</div>
 
 
 
